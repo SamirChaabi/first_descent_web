@@ -93,19 +93,59 @@ var main = function() {
   });
 
   var dictionary = {
+      'home_nav': {
+        'eng': 'Home',
+        'ger': 'German Ski & Board Rental',
+        'swe': 'Hem',
+      },
+      'rental_nav': {
+        'eng': 'Rental',
+        'ger': 'German Ski & Board Rental',
+        'swe': 'Hyra',
+      },
+      'service_nav': {
+        'eng': 'Service',
+        'ger': 'German Ski & Board Rental',
+        'swe': 'Service',
+      },
+      'shop_nav': {
+        'eng': 'Shop',
+        'ger': 'German Ski & Board Rental',
+        'swe': 'Butik',
+      },
+      'about_us_nav': {
+        'eng': 'Freeride',
+        'ger': 'German Ski & Board Rental',
+        'swe': 'Fri&aring;kning',
+      },
+      'contact_nav': {
+        'eng': 'Contact',
+        'ger': 'German Ski & Board Rental',
+        'swe': 'Kontakt',
+      },
       'skinboard': {
         'eng': 'Ski & Board Rental',
         'ger': 'German Ski & Board Rental',
-        'fr': 'Salut',
+        'swe': 'Skid- & Br&auml;d Hyra',
       },
       'service': {
         'eng': 'Service',
         'ger': 'German Service',
-        'fr': 'Salut',
+        'swe': 'Service',
+      },
+      'shop': {
+        'eng': 'Shop',
+        'ger': 'German Shop',
+        'swe': 'Butik',
+      },
+      'renthere': {
+        'eng': 'Rent Here',
+        'ger': 'German Here',
+        'swe': 'Boka H&auml;r',
       }
   };
 
-  var langs = ['eng', 'ger', 'fr'];
+  var langs = ['eng', 'ger', 'swe'];
   var current_lang_index = 0;
   var current_lang = langs[current_lang_index];
 
@@ -115,6 +155,9 @@ var main = function() {
     }
     else if (id == "ger") {
       current_lang = langs[1];
+    }
+    else if (id == "swe") {
+      current_lang = langs[2];
     }
     /*current_lang_index = ++current_lang_index % 3;
     current_lang = langs[current_lang_index];*/
