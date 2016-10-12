@@ -46,6 +46,16 @@ body{
   background-image: url(../Images/contact/mountains_background_contact_1.1.jpg);
 }
 
+.mainpage .languages{
+  position: absolute;;
+  top: 10vmin;
+  right: 0;
+}
+
+.mainpage .languages img{
+    max-width: 5vmin;
+}
+
 .mainpage .container{
   position: relative;
   min-width: 200px;
@@ -96,6 +106,8 @@ body{
   font-size: 3vmin;
   color: #FFFFFF;
   margin: auto;
+  margin-left: 1vmin;
+  margin-right: 1vmin;
 }
 
 .mainpage .bookingbtn {
