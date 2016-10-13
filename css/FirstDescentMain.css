@@ -166,6 +166,10 @@ figure.bubble {
   justify-content: space-between;
 }
 
+.nav .container li{
+  width: 15vmin;
+}
+
 .nav a {
   height: 10vmin;
   line-height: 10vmin;
@@ -211,7 +215,7 @@ figure.bubble {
 }
 
 .rentalpage .container .equipmentype, .rentalpage .container .jr, .rentalpage .container .kids{
-  width: 14vmin;
+  width: 18vmin;
   line-height: 3vmin;
   text-align: left;
 }

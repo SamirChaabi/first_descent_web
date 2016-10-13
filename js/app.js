@@ -142,6 +142,131 @@ var main = function() {
         'eng': 'Rent Here',
         'ger': 'German Here',
         'swe': 'Boka H&auml;r',
+      },
+      'equipmentype': {
+        'eng': 'Adults - Price/day (&euro;)',
+        'ger': 'German Here',
+        'swe': 'Vuxna - Pris/dag (&euro;)',
+      },
+      'premiumski': {
+        'eng': 'Premium skis',
+        'ger': 'German Here',
+        'swe': 'Premium skidor',
+      },
+      'excellenceski': {
+        'eng': 'Excellence skis',
+        'ger': 'German Here',
+        'swe': 'Excellence skidor',
+      },
+      'perfromanceski': {
+        'eng': 'Performance skis/Snowboard',
+        'ger': 'German Here',
+        'swe': 'Performance skidor/Snowboard',
+      },
+      'discoveryski': {
+        'eng': 'Discovery skis',
+        'ger': 'German Here',
+        'swe': 'Discovery skidor',
+      },
+      'premiumboots': {
+        'eng': 'Premium skiboots',
+        'ger': 'German Here',
+        'swe': 'Premium pj&auml;xor',
+      },
+      'boots': {
+        'eng': 'Boots',
+        'ger': 'German Here',
+        'swe': 'Pj&auml;xor/Snowboard boots',
+      },
+      'helmet': {
+        'eng': 'Helmet',
+        'ger': 'German Here',
+        'swe': 'Hj&auml;lm',
+      },
+      'junior': {
+        'eng': 'Junior (age 10-15)',
+        'ger': 'German Here',
+        'swe': 'Junior (&aring;lder 10-15)',
+      },
+      'jrskiboard': {
+        'eng': 'Ski/Board',
+        'ger': 'German Here',
+        'swe': 'Skidor/Snowboard',
+      },
+      'jrboots': {
+        'eng': 'Boots',
+        'ger': 'German Here',
+        'swe': 'Pj&auml;xor',
+      },
+      'jrhelmet': {
+        'eng': 'Helmet',
+        'ger': 'German Here',
+        'swe': 'Hj&auml;lm',
+      },
+      'kids': {
+        'eng': 'Kids (age 0-9)',
+        'ger': 'German Here',
+        'swe': 'Barn (&aring;lder 0-9)',
+      },
+      'kidsski': {
+        'eng': 'Ski',
+        'ger': 'German Here',
+        'swe': 'Skidor',
+      },
+      'kidsboots': {
+        'eng': 'Boots',
+        'ger': 'German Here',
+        'swe': 'Pj&auml;xor',
+      },
+      'kidshelmet': {
+        'eng': 'Helmet',
+        'ger': 'German Here',
+        'swe': 'Hj&auml;lm',
+      },
+      'safetyeq': {
+        'eng': 'Safety equipment',
+        'ger': 'German Here',
+        'swe': 'S&auml;kerhetsutrustning',
+      },
+      'transc': {
+        'eng': 'Transceiver',
+        'ger': 'German Here',
+        'swe': 'S&auml;ndare',
+      },
+      'probenshovle': {
+        'eng': 'Probe & Shovle',
+        'ger': 'German Here',
+        'swe': 'Sond & Spade',
+      },
+      'absbackpack': {
+        'eng': 'ABS Backpack',
+        'ger': 'German Here',
+        'swe': 'ABS Ryggs&auml;ck',
+      },
+      'backpack': {
+        'eng': 'Backpack',
+        'ger': 'German Here',
+        'swe': 'Ryggs&auml;ck',
+      },
+      'depot': {
+        'eng': 'Depot',
+        'ger': 'German Here',
+        'swe': 'Dep&aring;',
+      },
+      'depotski': {
+        'eng': 'Skis',
+        'ger': 'German Here',
+        'swe': 'Skidor',
+      },
+      'depotboot': {
+        'eng': 'Boots',
+        'ger': 'German Here',
+        'swe': 'Pj&auml;xor',
+      },
+      'depotset': {
+        'eng': 'Set',
+        'ger': 'German Here',
+        'swe': 'Set',
       }
   };
 
