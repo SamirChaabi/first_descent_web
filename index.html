@@ -35,8 +35,8 @@
         <div class="mainpage">
           <div class="languages">
             <img id="eng" alt="English" src="Images/main/languages/United-Kingdom.png" onclick="change_lang(this.id)">
-            <img id="ger" alt="German" src="Images/main/languages/Germany.png" onclick="change_lang(this.id)">
-            <img id="swe" alt="Swedish" src="Images/main/languages/Sweden.png" onclick="change_lang(this.id)">
+            <img id="ger" alt="German" src="Images/main/languages/Germany-Inactive.png" onclick="change_lang(this.id)">
+            <img id="swe" alt="Swedish" src="Images/main/languages/Sweden-Inactive.png" onclick="change_lang(this.id)">
           </div>
           <div class="container">
             <h2 class="BadGastein">Bad Gastein</h2>
@@ -295,23 +295,23 @@
       </div>
       <div class="section" data-anchor="service" id="servicepage">
         <div class="servicepage">
-          <h2><i>improve your performance with our top service</i></h2>
+          <h2 data-translate="servicedesc"><i>Improve your performance with our top service</i></h2>
           <div class="container">
             <div class="services">
               <img id="waxing" src="Images/service/service_1.1.gif" alt="Waxing service"/>
-              <span class="servicedescription"><h5>HOT WAX</h5><h6><i>Wax</i></h6></span>
+              <span class="servicedescription"><h5 data-translate="hotwax">Hot wax</h5><h6 data-translate="wax"><i>Wax</i></h6></span>
             </div>
             <div class="services">
               <img id="quicky" src="Images/service/service_1.2.gif" alt="Sharpening edges and waxing service"/>
-              <span class="servicedescription"><h5>QUICKY</h5><h6><i>Wax & edges sharpened</i></h6></span>
+              <span class="servicedescription"><h5 data-translate="quick">Quicky</h5><h6 data-translate="quickdesc"><i>Wax & edges sharpened</i></h6></span>
             </div>
             <div class="services">
               <img id="tuning" src="Images/service/service_1.3.gif" alt="Waxing, sharpening edges and stone grind service"/>
-              <span class="servicedescription"><h5>TUNING</h5><h6><i>Wax, edges & stone grind</i></h6></span>
+              <span class="servicedescription"><h5 data-translate="tunin">Tuning</h5><h6 data-translate="tunindesc"><i>Wax, edges & stone grind</i></h6></span>
             </div>
             <div class="services">
               <img id="premium" src="Images/service/service_1.4.gif"/>
-              <span class="servicedescription"><h5>PREMIUM</h5><h6><i>Wax, edges, stone grind & repair</i></h6></span>
+              <span class="servicedescription"><h5 data-translate="prem">Premium</h5><h6 data-translate="premdesc"><i>Wax, edges, stone grind & repair</i></h6></span>
             </div>
           </div>
         </div>
@@ -326,12 +326,22 @@
       <div class="section" data-anchor="about_us" id="aboutuspage">
         <div class="aboutuspage">
           <div class="container">
-            <h2 class="freeridesections"><i>Looking for an unforgettable freeride experience?</i></h2>
-            <h3 class="freeridesections"><i>Book a guided tour with our friends at <a id="snowsport" href="http://www.snowsports-gastein.com/" target="_blank">Snowsports Gastein</a></i></h3>
-            <h3 class="freeridesections"><i>Rent freeride equipment in our <a id="rentfreeride" class="iframe bubble" href="http://easyresv3.wintersteiger.at/index_easyrent.php?step=0&disgr_intnr=&shop_id=100147&sprache=eng">specialized shop</a></i></h3>
-            <h3 class="lastsection"><i>Freeride skis from 31 &euro;/day</i></h3>
-            <h3 class="lastsection"><i>ABS backpack from 10 &euro;/day</i></h3>
-            <h3 class="lastsection"><i>For more details check <a id="freeriderentallink" href="#rental">here</a></i></h3>
+            <h2 data-translate="unforgexp"><i>Looking for an unforgettable freeride experience?</i></h2>
+            <br><h3 data-translate="guidedtour"><i>Book a guided tour with our friends at </i></h3> <h3><i> <a id="snowsport" href="http://www.snowsports-gastein.com/" target="_blank">Snowsports Gastein</a></i></h3></br>
+            <h3 data-translate="rentfreer"><i>Rent freeride equipment in our </i></h3>
+            <a id="rentfreeride" class="iframe bubble" href="http://easyresv3.wintersteiger.at/index_easyrent.php?step=0&disgr_intnr=&shop_id=100147&sprache=eng">
+              <h3 data-translate="specshop"><i>crisp shop</i></h3>
+            </a>
+            <br>
+              <h3 data-translate="freerideskisfrom"><i>Freeride skis from 31 &euro;/day</i></h3>
+            </br>
+            <h3 data-translate="absfrom"><i>ABS backpack from 10 &euro;/day</i></h3>
+            <br>
+              <h3 data-translate="moredetails"><i>For more </i></h3>
+              <a id="freeriderentallink" href="#rental">
+                <h3 data-translate="deta"><i>details</i></h3>
+              </a>
+            </br>
             <img id="black_diamond_logo" src="Images/about_us/black-diamond-logo.png"/>
             <img id="pieps_logo" src="Images/about_us/pieps.png"/>
             <br>
@@ -347,7 +357,7 @@
             <a href="mailto:info@first-descent.com">
             <div id="mail" class="contactpoint">
               <img id="mailicon" src="Images/contact/mail_black.png"/>
-              <span class="contactdescription">Mail</span>
+              <span data-translate="mail" class="contactdescription">Mail</span>
             </div>
             </a>
             <div class="contactpoint">
@@ -362,7 +372,7 @@
             </a>
             <div id="map" class="iframe map" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2715.3156944015495!2d13.130530715154164!3d47.11248427915494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477730ec3d2878fb%3A0x3c39c953fc8f5a65!2sFirst+Descent!5e0!3m2!1ssv!2sat!4v1457039576980">
               <img id="mapicon" src="Images/contact/map_black.png" alt="Map contact"/>
-              <span class="contactdescription">Find us</span>
+              <span data-translate="findus" class="contactdescription">Find us</span>
             </div>
             <p class="impressum" title="First Descent&#10Solum Verleih KG&#10Grillparzerstr. 2-4&#10AT-5640 Bad Gastein&#10Firmenbuchnummer: 165782y&#10Email: info@first-descent.com">Impressum</p>
           </div>

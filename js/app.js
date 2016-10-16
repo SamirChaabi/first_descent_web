@@ -196,7 +196,7 @@ var main = function() {
       'jrboots': {
         'eng': 'Boots',
         'ger': 'German Here',
-        'swe': 'Pj&auml;xor',
+        'swe': 'Pj&auml;xor/Snowboard boots',
       },
       'jrhelmet': {
         'eng': 'Helmet',
@@ -216,7 +216,7 @@ var main = function() {
       'kidsboots': {
         'eng': 'Boots',
         'ger': 'German Here',
-        'swe': 'Pj&auml;xor',
+        'swe': 'Pj&auml;xor/Snowboard boots',
       },
       'kidshelmet': {
         'eng': 'Helmet',
@@ -267,6 +267,101 @@ var main = function() {
         'eng': 'Set',
         'ger': 'German Here',
         'swe': 'Set',
+      },
+      'servicedesc': {
+        'eng': 'Improve your performance with our top service',
+        'ger': 'German Here',
+        'swe': 'F&ouml;rb&auml;ttra prestandan med v&aring;r h&ouml;gkvalitativa service',
+      },
+      'hotwax': {
+        'eng': 'Hot wax',
+        'ger': 'German Here',
+        'swe': 'Varmt vax',
+      },
+      'wax': {
+        'eng': 'Wax',
+        'ger': 'German Here',
+        'swe': 'Vax',
+      },
+      'quick': {
+        'eng': 'Quicky',
+        'ger': 'German Here',
+        'swe': 'Quicky',
+      },
+      'quickdesc': {
+        'eng': 'Wax & edges sharpened',
+        'ger': 'German Here',
+        'swe': 'Vax & spliade kanter',
+      },
+      'tunin': {
+        'eng': 'Tuning',
+        'ger': 'German Here',
+        'swe': 'Tuning',
+      },
+      'tunindesc': {
+        'eng': 'Wax, edges & stone grind',
+        'ger': 'German Here',
+        'swe': 'Vax, kanter & sten slipning',
+      },
+      'prem': {
+        'eng': 'Premium',
+        'ger': 'German Here',
+        'swe': 'Premium',
+      },
+      'premdesc': {
+        'eng': 'Wax, edges, stone grind & repair',
+        'ger': 'German Here',
+        'swe': 'Vax, kanter, sten slipning & reparation',
+      },
+      'unforgexp': {
+        'eng': 'Looking for an unforgettable freeride experience?',
+        'ger': 'German Here',
+        'swe': 'Sugen p&aring; en of&ouml;rgl&ouml;mlig fri&aring;kningsupplevelse?',
+      },
+      'guidedtour': {
+        'eng': 'Book a guided tour with our friends at ',
+        'ger': 'German Here',
+        'swe': 'Boka en guidad tur med v&aring;ra v&auml;nner p&aring;',
+      },
+      'rentfreer': {
+        'eng': 'Rent freeride equipment in our ',
+        'ger': 'German Here',
+        'swe': 'Hyr fri&aring;kningsutrustning i v&aring;ran ',
+      },
+      'specshop': {
+        'eng': 'crisp shop ',
+        'ger': 'German Here',
+        'swe': 'fr&auml;scha butik',
+      },
+      'freerideskisfrom': {
+        'eng': 'Freeride skis from 31 &euro;/day',
+        'ger': 'German Here',
+        'swe': 'Fri&aring;kningsskidor fr&aring;n 31 &euro;/dag',
+      },
+      'absfrom': {
+        'eng': 'ABS backpack from 10 &euro;/day',
+        'ger': 'German Here',
+        'swe': 'ABS ryggs&auml;ck fr&aring;n 10 &euro;/dag',
+      },
+      'moredetails': {
+        'eng': 'For more ',
+        'ger': 'German Here',
+        'swe': 'F&ouml;r mer ',
+      },
+      'deta': {
+        'eng': 'details',
+        'ger': 'German Here',
+        'swe': 'info.',
+      },
+      'mail': {
+        'eng': 'Mail',
+        'ger': 'German Here',
+        'swe': 'Mail',
+      },
+      'findus': {
+        'eng': 'Find us ',
+        'ger': 'German Here',
+        'swe': 'Hitta hit',
       }
   };
 
@@ -275,17 +370,22 @@ var main = function() {
   var current_lang = langs[current_lang_index];
 
   window.change_lang = function(id) {
+    setCurrentFlagInactive(id);
     if (id == "eng") {
+      document.getElementById(id).src = 'Images/main/languages/United-Kingdom.png';
       current_lang = langs[0];
     }
     else if (id == "ger") {
+      document.getElementById(id).src = 'Images/main/languages/Germany.png';
       current_lang = langs[1];
     }
     else if (id == "swe") {
+      document.getElementById(id).src = 'Images/main/languages/Sweden.png';
       current_lang = langs[2];
     }
     /*current_lang_index = ++current_lang_index % 3;
     current_lang = langs[current_lang_index];*/
+
     translate(id);
   }
 
@@ -294,6 +394,18 @@ var main = function() {
         var key = $(this).data('translate');
         $(this).html(dictionary[key][current_lang] || "N/A");
     });
+  }
+
+  function setCurrentFlagInactive(id){
+    if (current_lang == "eng") {
+      document.getElementById(current_lang).src ='Images/main/languages/United-Kingdom-Inactive.png';
+    }
+    else if (current_lang == "ger") {
+      document.getElementById(current_lang).src ='Images/main/languages/Germany-Inactive.png';
+    }
+    else if (current_lang == "swe") {
+      document.getElementById(current_lang).src ='Images/main/languages/Sweden-Inactive.png';
+    }
   }
 
   translate();
