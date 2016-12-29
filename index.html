@@ -19,23 +19,34 @@
       <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
       <script src="js/app.js"></script>
     </head>
-    <div class="nav" id="nav">
-      <div class="container">
-        <li  data-menuanchor="home"><a data-translate="home_nav" href="#home">Home</a></li>
-        <li  data-menuanchor="rental"><a data-translate="rental_nav" href="#rental">Rental</a></li>
-        <li  data-menuanchor="service"><a data-translate="service_nav" href="#service">Service</a></li>
-        <li><a href="#home"><img src="Images/navigation/HeaderIconFD.png" alt="badgastein,bad gastein,ski,rental,snowboard,hire,service,rent,cheap,shop,buy,austria,alps,skirental,snowboardrental,firstdescent,first descent"></a></li>
-        <li data-menuanchor="shop"><a data-translate="shop_nav" href="#shop">Shop</a></li>
-        <li data-menuanchor="about_us"><a data-translate="about_us_nav" href="#about_us">Freeride</a></li>
-        <li data-menuanchor="contact"><a data-translate="contact_nav" href="#contact">Contact</a></li>
-      </div>
-    </div>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNavBar">
+            <ul class="nav navbar-nav">
+              <li class="active" data-menuanchor="home"><a data-translate="home_nav" href="#home">Home</a></li>
+              <li data-menuanchor="rental"><a data-translate="rental_nav" href="#rental">Rental</a></li>
+              <li data-menuanchor="service"><a data-translate="service_nav" href="#service">Service</a></li>
+              <li><a href="#home"><img src="Images/navigation/HeaderIconFD.png" alt="badgastein,bad gastein,ski,rental,snowboard,hire,service,rent,cheap,shop,buy,austria,alps,skirental,snowboardrental,firstdescent,first descent"></a></li>
+              <li data-menuanchor="shop"><a data-translate="shop_nav" href="#shop">Shop</a></li>
+              <li data-menuanchor="about_us"><a data-translate="about_us_nav" href="#about_us">Freeride</a></li>
+              <li data-menuanchor="contact"><a data-translate="contact_nav" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
     <div id="fullpage">
       <div class="section" data-anchor="main" id="mainpage">
         <div class="mainpage">
           <div class="languages">
             <img id="eng" alt="English" src="Images/main/languages/United-Kingdom.png" onclick="change_lang(this.id)">
-            <img id="ger" alt="German" src="Images/main/languages/Germany-Inactive.png" onclick="change_lang(this.id)">
+            <!--<img id="ger" alt="German" src="Images/main/languages/Germany-Inactive.png" onclick="change_lang(this.id)"> -->
             <img id="swe" alt="Swedish" src="Images/main/languages/Sweden-Inactive.png" onclick="change_lang(this.id)">
           </div>
           <div class="container">
@@ -60,9 +71,10 @@
       <div class="section" data-anchor="rental" id="rentalpage">
         <div class="rentalpage">
           <div class="container">
-            <table class="adultskis">
-              <tr class="rentaldays">
-                <td data-translate="equipmentype" class="equipmentype">Adults - Price/day (&euro;)</td>
+            <table class="table table-striped">
+              <tbody>
+              <thead class="rentaldays">
+                <td>Adults - Price/day (&euro;)</td>
                 <td>1</td>
                 <td>2</td>
                 <td>3</td>
@@ -70,8 +82,8 @@
                 <td>5</td>
                 <td>6/7</td>
                 <td>+1</td>
-              </tr>
-              <tr class="highlited">
+              </thead>
+              <tr>
                 <td data-translate="premiumski" id="skis" class="equipmentype" title="The finest brands for the ultimate experience">Premium ski</td>
                 <td>38</td>
                 <td>73</td>
@@ -91,7 +103,7 @@
                 <td>137</td>
                 <td>14</td>
               </tr>
-              <tr class="highlited">
+              <tr>
                 <td data-translate="perfromanceski" id="skis" class="equipmentype" title="Wide variety of models for the intermediate skier">Performance ski/Snowboard</td>
                 <td>25</td>
                 <td>46</td>
@@ -111,7 +123,7 @@
                 <td>79</td>
                 <td>9</td>
               </tr>
-              <tr class="highlited">
+              <tr>
                 <td data-translate="premiumboots" class="equipmentype">Premium skiboots</td>
                 <td>12</td>
                 <td>23</td>
@@ -131,7 +143,7 @@
                 <td>40</td>
                 <td>4</td>
               </tr>
-              <tr class="highlited">
+              <tr>
                 <td data-translate="helmet" class="equipmentype">Helmet</td>
                 <td>5</td>
                 <td>9</td>
@@ -141,12 +153,10 @@
                 <td>22</td>
                 <td>3</td>
               </tr>
-            </table>
-            <table class="childrenskis">
-              <tr class="rentaldays">
+              <thead>
                 <td data-translate="junior" colspan="8" class="equipmentype">Junior (age 10-15)</td>
-              </tr>
-              <tr class="highlited">
+              </thead>
+              <tr>
                 <td data-translate="jrskiboard" class="jr">Ski/Board</td>
                 <td>12</td>
                 <td>22</td>
@@ -176,9 +186,9 @@
                 <td>22</td>
                 <td>3</td>
               </tr>
-              <tr class="kidsrentaldays">
+              <thead>
                 <td data-translate="kids" colspan="8" class="kidsheader">Kids (age 0-9)</td>
-              </tr>
+              </thead>
               <tr class="highlited">
                 <td data-translate="kidsski" class="kids">Ski</td>
                 <td>7</td>
@@ -209,8 +219,6 @@
                 <td>15</td>
                 <td>2</td>
               </tr>
-            </table>
-            <table class="avalancheequipment">
               <tr  class="rentaldays">
                 <td data-translate="safetyeq" colspan="8" class="equipmentype">Safety equipment</td>
               </tr>
@@ -254,11 +262,9 @@
                 <td>33</td>
                 <td>4</td>
               </tr>
-            </table>
-            <table class="depot">
-              <tr class="rentaldays">
+              <thead class="rentaldays">
                 <td data-translate="depot" colspan="8" class="equipmentype">Depot</td>
-              </tr>
+              </thead>
               <tr class="highlited">
                 <td data-translate="depotski" class="equipmentype">Ski</td>
                 <td>7</td>
@@ -289,6 +295,7 @@
                 <td>16</td>
                 <td>1</td>
               </tr>
+              </tbody>
             </table>
           </div>
         </div>
@@ -362,7 +369,7 @@
             </a>
             <div class="contactpoint">
               <img src="Images/contact/phone_black.png" alt="Phone contact"/>
-              <span class="contactdescription">+43 6434 3453</span>
+              <span class="contactdescription">+43 6434 30478</span>
             </div>
             <a href="https://www.facebook.com/first.descent1/" target="_blank">
               <div id="fb" class="contactpoint">
@@ -374,7 +381,7 @@
               <img id="mapicon" src="Images/contact/map_black.png" alt="Map contact"/>
               <span data-translate="findus" class="contactdescription">Find us</span>
             </div>
-            <p class="impressum" title="First Descent&#10Solum Verleih KG&#10Grillparzerstr. 2-4&#10AT-5640 Bad Gastein&#10Firmenbuchnummer: 165782y&#10Email: info@first-descent.com">Impressum</p>
+            <a class="iframe impressum" title="First Descent&#10Solum Verleih KG&#10Grillparzerstr. 2-4&#10AT-5640 Bad Gastein&#10Firmenbuchnummer: 165782y&#10Email: info@first-descent.com" href="impressum/AGB-2016.pdf">Impressum</a>
           </div>
         </div>
       </div>

@@ -126,7 +126,7 @@ var main = function() {
       'skinboard': {
         'eng': 'Ski & Board Rental',
         'ger': 'German Ski & Board Rental',
-        'swe': 'Skid- & Br&auml;d Hyra',
+        'swe': 'Skid- & Snowboard Hyra',
       },
       'service': {
         'eng': 'Service',
@@ -276,7 +276,7 @@ var main = function() {
       'hotwax': {
         'eng': 'Hot wax',
         'ger': 'German Here',
-        'swe': 'Varmt vax',
+        'swe': 'Hot wax',
       },
       'wax': {
         'eng': 'Wax',
@@ -291,7 +291,7 @@ var main = function() {
       'quickdesc': {
         'eng': 'Wax & edges sharpened',
         'ger': 'German Here',
-        'swe': 'Vax & spliade kanter',
+        'swe': 'Vax & slipade kanter',
       },
       'tunin': {
         'eng': 'Tuning',

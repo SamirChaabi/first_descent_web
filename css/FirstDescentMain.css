@@ -151,6 +151,25 @@ figure.bubble {
   height: 5vmin;
 }
 
+.navbar{
+  z-index: 1;
+}
+
+.navbar img{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.navbar a{
+  height: 7vmin;
+  line-height: 7vmin;
+  color: #FFFFFF;
+  font-size: 2vmin;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/*
 .nav{
   position: fixed;
   width: 100%;
@@ -191,7 +210,7 @@ figure.bubble {
 
 .nav a:hover{
   color: #F57C00;
-}
+}*/
 
 .rentalpage .adultskis, .rentalpage .childrenskis, .rentalpage .avalancheequipment, .rentalpage .depot{
   width: 100%;
@@ -351,7 +370,7 @@ figure.bubble {
   height: 10vmin;
 }
 
-.contactpage .container .contactpoint, .contactpage .container .iframe{
+.contactpage .container .contactpoint, .contactpage .container .map{
     vertical-align: top;
     display: inline-block;
     text-align: center;
@@ -367,10 +386,10 @@ figure.bubble {
   display: block;
 }
 
-.impressum{
+.contactpage .container .impressum{
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
   margin-left: 2vmin;
-  color: #DADADA;
+  color: #B4B4B4;
 }
