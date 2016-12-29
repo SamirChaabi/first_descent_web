@@ -158,17 +158,9 @@ figure.bubble {
 .navbar img{
   max-width: 50px;
   max-height: 50px;
+  vertical-align: middle;
 }
 
-.navbar a{
-  height: 7vmin;
-  line-height: 7vmin;
-  color: #FFFFFF;
-  font-size: 2vmin;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-}
 /*
 .nav{
   position: fixed;
@@ -188,10 +180,19 @@ figure.bubble {
 .nav .container li{
   width: 15vmin;
 }
+*/
 
-.nav a {
-  height: 7vmin;
-  line-height: 7vmin;
+button.navbar-toggle.navbar-left.collapsed span{
+  background-color: black;
+  border-bottom: 0.1vmin solid white;
+}
+
+.nav li{
+  padding: 0 20px;
+}
+.nav li a {
+  padding: 0;
+  line-height: 50px;
   color: #FFFFFF;
   font-size: 2vmin;
   font-weight: bold;
@@ -199,10 +200,22 @@ figure.bubble {
   text-decoration: none;
 }
 
-.nav img{
-  width: 7vmin;
-  height: 7vmin;
+.navbar{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: none;
 }
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+/*
 
 .nav li.active a{
   color: #F57C00;
